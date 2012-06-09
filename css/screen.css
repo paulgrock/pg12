@@ -8,30 +8,36 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 10, ../sass/screen.sass */
+/* line 12, ../sass/screen.sass */
+.row-fluid, .row-fluid [class*="span"] {
+  margin-left: 0; }
+
+/* line 15, ../sass/screen.sass */
 #wrapper {
   margin: 3em auto;
   width: 80%;
-  background: gray; }
+  background: white; }
+  /* line 19, ../sass/screen.sass */
+  #wrapper div {
+    border: 2px solid #d0ccc8; }
 
-/* line 15, ../sass/screen.sass */
+/* line 22, ../sass/screen.sass */
 .thanks {
   float: left; }
 
-/* line 18, ../sass/screen.sass */
+/* line 25, ../sass/screen.sass */
 .social {
   float: right; }
-  /* line 20, ../sass/screen.sass */
+  /* line 27, ../sass/screen.sass */
   .social li {
     display: inline-block; }
 
-/* line 23, ../sass/screen.sass */
+/* line 30, ../sass/screen.sass */
 .weird {
   height: 200px; }
-  /* line 25, ../sass/screen.sass */
+  /* line 32, ../sass/screen.sass */
   .weird div {
-    border: 1px solid white;
     height: 50%; }
-  /* line 28, ../sass/screen.sass */
+  /* line 34, ../sass/screen.sass */
   .weird .double {
     height: 100%; }

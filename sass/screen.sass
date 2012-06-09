@@ -7,10 +7,17 @@
 
 *
   @include box-sizing(border-box)
+//overriding bootstrap gutter
+
+.row-fluid, .row-fluid [class*="span"] 
+  margin-left: 0
+
 #wrapper
   margin: 3em auto
   width: 80%
-  background: gray
+  background: white
+  div
+    border: 2px solid hsla(26, 7%, 80%, 1)
 
 .thanks 
   float: left
@@ -23,7 +30,6 @@
 .weird
   height: 200px
   div 
-    border: 1px solid white
     height: 50%
   .double 
     height: 100%
