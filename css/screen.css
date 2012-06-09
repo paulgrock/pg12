@@ -2,23 +2,36 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 8, ../sass/screen.sass */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 10, ../sass/screen.sass */
 #wrapper {
   margin: 3em auto;
   width: 80%;
   background: gray; }
 
+/* line 15, ../sass/screen.sass */
 .thanks {
   float: left; }
 
+/* line 18, ../sass/screen.sass */
 .social {
   float: right; }
+  /* line 20, ../sass/screen.sass */
   .social li {
     display: inline-block; }
 
+/* line 23, ../sass/screen.sass */
 .weird {
   height: 200px; }
+  /* line 25, ../sass/screen.sass */
   .weird div {
     border: 1px solid white;
     height: 50%; }
+  /* line 28, ../sass/screen.sass */
   .weird .double {
     height: 100%; }
