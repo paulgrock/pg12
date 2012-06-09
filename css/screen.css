@@ -14,3 +14,11 @@
   float: right; }
   .social li {
     display: inline-block; }
+
+.weird {
+  height: 200px; }
+  .weird div {
+    border: 1px solid white;
+    height: 50%; }
+  .weird .double {
+    height: 100%; }
