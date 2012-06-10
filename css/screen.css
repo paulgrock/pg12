@@ -44,35 +44,8 @@
 
 /* line 38, ../sass/screen.sass */
 #mainNav div {
-  position: relative;
-  -webkit-transform-origin: center center;
-  -moz-transform-origin: center center;
-  -ms-transform-origin: center center;
-  -o-transform-origin: center center;
-  transform-origin: center center;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -ms-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 300ms;
-  -moz-transition-duration: 300ms;
-  -ms-transition-duration: 300ms;
-  -o-transition-duration: 300ms;
-  transition-duration: 300ms; }
-  /* line 43, ../sass/screen.sass */
-  #mainNav div.flipLeft {
-    -webkit-transform: rotateY(-180deg);
-    transform: rotateY(-180deg); }
-  /* line 45, ../sass/screen.sass */
-  #mainNav div.flipRight {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg); }
-  /* line 47, ../sass/screen.sass */
-  #mainNav div.flipFront {
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg); }
-  /* line 49, ../sass/screen.sass */
+  position: relative; }
+  /* line 40, ../sass/screen.sass */
   #mainNav div a {
     display: block;
     text-align: center;
@@ -81,13 +54,49 @@
     right: 0;
     bottom: 0;
     left: 0;
-    line-height: 28px; }
-    /* line 58, ../sass/screen.sass */
-    #mainNav div a.front {
-      -webkit-backface-visibility: hidden; }
+    line-height: 28px;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -ms-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden; }
     /* line 60, ../sass/screen.sass */
     #mainNav div a.back {
+      -webkit-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+      background-color: black; }
+    /* line 64, ../sass/screen.sass */
+    #mainNav div a.tiltLeft {
+      -webkit-transform: rotateY(-45deg);
+      transform: rotateY(-45deg); }
+    /* line 66, ../sass/screen.sass */
+    #mainNav div a.tiltRight {
+      -webkit-transform: rotateY(45deg);
+      transform: rotateY(45deg); }
+    /* line 69, ../sass/screen.sass */
+    #mainNav div a.flipLeft {
+      -webkit-transform: rotateY(-180deg);
+      transform: rotateY(-180deg); }
+    /* line 71, ../sass/screen.sass */
+    #mainNav div a.flipRight {
       -webkit-transform: rotateY(180deg);
-      transform: rotateY(180deg);
-      -webkit-backface-visibility: hidden;
-      background: black; }
+      transform: rotateY(180deg); }
+    /* line 73, ../sass/screen.sass */
+    #mainNav div a.flipFront {
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg); }

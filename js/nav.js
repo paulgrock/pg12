@@ -1,20 +1,27 @@
 (function(){
   var navContainer = $("#mainNav").find(".nav"),
       navLinks = $("#mainNav").find("a");
-  navLinks.click(function(evt){
-    evt.preventDefault();
-  });
 
   function clickFlip(evt) {
+    evt.preventDefault();
+    var side = calculateSide(evt, this);
+    $(this).removeClass("tiltLeft tiltRight");
+    if (side === 'front left') {
+      $(this).addClass("flipLeft").siblings().addClass("flipFront");
+    } else if (side === 'front right') {
+      $(this).addClass("flipRight").siblings().addClass("flipFront");
+    } else if (side === 'back') {
+      $(this).removeClass("flipFront");
+      $(this).siblings().removeClass("flipRight flipLeft");
+    }
+  }
+
+  function clickTilt(evt) {
     var side = calculateSide(evt, this);
     if (side === 'front left') {
-      $(this).addClass("flipLeft back");
+      $(this).addClass("tiltLeft");
     } else if (side === 'front right') {
-      $(this).addClass("flipRight back");
-    } else if (side === 'back left') {
-      $(this).removeClass("back flipRight flipLeft");
-    } else if (side === 'back right') {
-      $(this).removeClass("back flipRight flipLeft");
+      $(this).addClass("tiltRight");
     }
   }
 
@@ -29,13 +36,10 @@
         return "front right";
       }
     } else {
-      if (left < width/2) {
-        return "back left";
-      } else {
-        return "back right";
-      }
+      return "back";
     }
   }
-  navContainer.click(clickFlip);
+  navLinks.click(clickFlip);
+  navLinks.mousedown(clickTilt);
 
 })();
