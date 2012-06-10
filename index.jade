@@ -27,18 +27,23 @@ html(lang = 'en')
           .span6
           .span4
           .span4
-        .row-fluid
+        #mainNav.row-fluid
           .span2
-          .span2
-            a(href="/showcase.html") Showcase
-          .span2
-            a(href="/skills.html") Skills
-          .span2
-            a(href="/about.html") About
-          .span2
-            a(href="/blog.html") Blog
-          .span2
-            a(href="/contact.html") Contact
+          .span2.nav
+            a.front(href="/showcase.html") Showcase
+            a.back(href="/showcase.html") Showcase
+          .span2.nav
+            a.front(href="/skills.html") Skills
+            a.back(href="/skills.html") Skills
+          .span2.nav
+            a.front(href="/about.html") About
+            a.back(href="/about.html") About
+          .span2.nav
+            a.front(href="/blog.html") Blog
+            a.back(href="/blog.html") Blog
+          .span2.nav
+            a.front(href="/contact.html") Contact
+            a.back(href="/contact.html") Contact
         .row-fluid
           .span4
             h3 03
@@ -52,3 +57,4 @@ html(lang = 'en')
             p &copy; Paul Grock All Rights Reserved
       script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
       script(src="js/bootstrap.js")
+      script(src="js/nav.js")
