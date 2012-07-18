@@ -1,0 +1,221 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: "ColaborateThinRegular";
+  src: url(/fonts/colaborate/ColabThi-webfont.eot) format('embedded-opentype'), url(/fonts/colaborate/ColabThi-webfont.eot?#iefix) format('embedded-opentype'), url(/fonts/colaborate/ColabThi-webfont.woff) format('woff'), url(/fonts/colaborate/ColabThi-webfont.ttf) format('truetype'), url(/fonts/colaborate/ColabThi-webfont.svg#ColaborateThinRegular) format('svg'); }
+
+/* line 13, ../sass/screen.sass */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 16, ../sass/screen.sass */
+html {
+  min-height: 100%; }
+
+/* line 19, ../sass/screen.sass */
+body {
+  background-color: #0f3d77;
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, rgba(0, 107, 189, 0.9)), color-stop(100%, rgba(30, 16, 50, 0.9))), url("/images/bg-circles.png");
+  background: -webkit-radial-gradient(50% 50%, rgba(0, 107, 189, 0.9), rgba(30, 16, 50, 0.9)), url("/images/bg-circles.png");
+  background: -moz-radial-gradient(50% 50%, rgba(0, 107, 189, 0.9), rgba(30, 16, 50, 0.9)), url("/images/bg-circles.png");
+  background: -o-radial-gradient(50% 50%, rgba(0, 107, 189, 0.9), rgba(30, 16, 50, 0.9)), url("/images/bg-circles.png");
+  background: -ms-radial-gradient(50% 50%, rgba(0, 107, 189, 0.9), rgba(30, 16, 50, 0.9)), url("/images/bg-circles.png");
+  background: radial-gradient(50% 50%, rgba(0, 107, 189, 0.9), rgba(30, 16, 50, 0.9)), url("/images/bg-circles.png");
+  min-height: 100%;
+    min-height-font-family: "Helvetica Neue", sans-serif; }
+
+/* line 26, ../sass/screen.sass */
+p {
+  color: #828282; }
+
+/* line 30, ../sass/screen.sass */
+.row-fluid, .row-fluid [class*="span"] {
+  margin-left: 0; }
+
+/* line 33, ../sass/screen.sass */
+#wrapper {
+  margin: 3em auto;
+  width: 80%;
+  background: white; }
+  /* line 37, ../sass/screen.sass */
+  #wrapper p {
+    margin: 0; }
+
+/* line 40, ../sass/screen.sass */
+div[class^=span] {
+  border: 1px solid #d0ccc8;
+  padding: 1em; }
+
+/* line 45, ../sass/screen.sass */
+header.row-fluid, footer.row-fluid {
+  background: #999999;
+  font-family: "ColaborateThinRegular", sans-serif; }
+
+/* line 51, ../sass/screen.sass */
+header.row-fluid div {
+  border-width: 0;
+  padding: 0 1em; }
+/* line 54, ../sass/screen.sass */
+header.row-fluid p {
+  color: #848484;
+  text-transform: uppercase; }
+
+/* line 57, ../sass/screen.sass */
+.thanks {
+  float: left; }
+
+/* line 60, ../sass/screen.sass */
+.social {
+  float: right; }
+  /* line 62, ../sass/screen.sass */
+  .social li {
+    display: inline-block; }
+
+/* line 65, ../sass/screen.sass */
+.weird {
+  height: 200px; }
+  /* line 67, ../sass/screen.sass */
+  .weird div {
+    height: 50%; }
+  /* line 69, ../sass/screen.sass */
+  .weird .double {
+    height: 100%;
+    text-align: center;
+    display: table; }
+    /* line 73, ../sass/screen.sass */
+    .weird .double div {
+      display: table-cell;
+      vertical-align: middle; }
+      /* line 76, ../sass/screen.sass */
+      .weird .double div hr {
+        margin: 0;
+        border-top-color: #828282; }
+      /* line 79, ../sass/screen.sass */
+      .weird .double div p {
+        text-transform: uppercase; }
+        /* line 81, ../sass/screen.sass */
+        .weird .double div p span {
+          font-weight: bold; }
+
+/* line 84, ../sass/screen.sass */
+.subtle {
+  display: table !important;
+  font-family: "ColaborateThinRegular", sans-serif; }
+  /* line 87, ../sass/screen.sass */
+  .subtle p {
+    display: table-cell;
+    vertical-align: bottom;
+    color: #f3f3f3; }
+    /* line 91, ../sass/screen.sass */
+    .subtle p span {
+      font-size: 3em; }
+  /* line 93, ../sass/screen.sass */
+  .subtle.span12 {
+    text-align: right; }
+    /* line 95, ../sass/screen.sass */
+    .subtle.span12 p {
+      display: block; }
+
+/* line 99, ../sass/screen.sass */
+nav.row-fluid div.span2 {
+  position: relative;
+  min-height: 160px; }
+  /* line 102, ../sass/screen.sass */
+  nav.row-fluid div.span2 a {
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+    color: #848484;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 6em 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    line-height: 28px;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -ms-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden; }
+    /* line 128, ../sass/screen.sass */
+    nav.row-fluid div.span2 a.back {
+      -moz-transform: rotateY(-180deg);
+      -webkit-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+      background-color: #caf9f6;
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #95f4ee));
+      background-image: -webkit-linear-gradient(top, #ffffff, #95f4ee);
+      background-image: -moz-linear-gradient(top, #ffffff, #95f4ee);
+      background-image: -o-linear-gradient(top, #ffffff, #95f4ee);
+      background-image: -ms-linear-gradient(top, #ffffff, #95f4ee);
+      background-image: linear-gradient(top, #ffffff, #95f4ee);
+      *zoom: 1;
+      filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FF95F4EE'); }
+    /* line 135, ../sass/screen.sass */
+    nav.row-fluid div.span2 a.flipLeft {
+      -moz-transform: rotateY(-180deg);
+      -webkit-transform: rotateY(-180deg);
+      transform: rotateY(-180deg); }
+    /* line 138, ../sass/screen.sass */
+    nav.row-fluid div.span2 a.flipRight {
+      -moz-transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg); }
+    /* line 141, ../sass/screen.sass */
+    nav.row-fluid div.span2 a.flipFront {
+      -moz-transform: rotateY(0deg);
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg); }
+
+/* line 145, ../sass/screen.sass */
+#content {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 5px 5px 0 inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 5px 5px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 5px 5px 0 inset;
+  background: #999999; }
+  /* line 148, ../sass/screen.sass */
+  #content div {
+    border: none; }
+    /* line 150, ../sass/screen.sass */
+    #content div.span8 {
+      border-left: 1px solid #d0ccc8; }
+    /* line 152, ../sass/screen.sass */
+    #content div.span4 {
+      font-family: "ColaborateThinRegular", sans-serif; }
+    /* line 154, ../sass/screen.sass */
+    #content div h3 {
+      background-image: linear-gradient; }
+  /* line 157, ../sass/screen.sass */
+  #content form label {
+    margin: 5px 0 0; }
+
+/* line 161, ../sass/screen.sass */
+footer.row-fluid {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 5px 5px 0 inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 5px 5px 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 5px 5px 0 inset; }
+  /* line 163, ../sass/screen.sass */
+  footer.row-fluid div {
+    border-width: 0; }

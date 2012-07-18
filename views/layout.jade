@@ -1,0 +1,86 @@
+!!! 5
+html(lang = 'en')
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.css')
+    link(rel='stylesheet', href='/stylesheets/screen.css')
+  body#main
+    #wrapper
+      header.row-fluid(role="banner")
+        .span12
+          p.thanks
+            | Thank you for your participation.
+          ul.social
+            li
+              a(href="http://github.com/paulgrock") Github
+            li
+              a(href="http://twitter.com/paulgrock") Twitter
+            li
+              a(href="http://linkedin.com/pub/paulgrock") Linkedin
+            li
+              a(href="http://facebook.com/paulgrock") FB
+      .row-fluid.weird
+        .span4.double 
+          div
+            p 
+              span Paul 
+              | Grock
+            hr
+            p Web 
+              span Developer
+        .span2
+        .span6.subtle
+          p 
+            span 09
+            | know your paradoxes
+        .span4
+        .span4
+      nav.row-fluid
+        .span2
+        .span2
+          a.front(href="/showcase") 
+            span Showcase
+          a.back(href="/showcase") 
+            span Showcase
+        .span2
+          a.front(href="/skills") 
+            span Skills
+          a.back(href="/skills") 
+            span Skills
+        .span2
+          a.front(href="/about") 
+            span About
+          a.back(href="/about") 
+            span About
+        .span2
+          a.front(href="/blog") 
+            span Blog
+          a.back(href="/blog")
+            span Blog
+        .span2
+          a.front(href="/contact") 
+            span Contact
+          a.back(href="/contact") 
+            span Contact
+      #content.row-fluid
+        .span4
+          h3 03
+          p
+            | | | | | | | | | | | | | | | |
+        .span8
+          div!= body
+
+
+
+      .row-fluid
+        .span12.subtle
+          p
+            span 21
+            | Welcome to the future
+      footer.row-fluid
+        .span12
+          p &copy; Paul Grock All Rights Reserved
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js")
+    script(src="/javascripts/bootstrap.js")
+    script(src="/javascripts/nav.js")
