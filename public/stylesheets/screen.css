@@ -201,21 +201,28 @@ nav.row-fluid div.span2 {
     /* line 150, ../sass/screen.sass */
     #content div.span8 {
       border-left: 1px solid #d0ccc8; }
-    /* line 152, ../sass/screen.sass */
+      /* line 152, ../sass/screen.sass */
+      #content div.span8 p {
+        color: #545454; }
+    /* line 154, ../sass/screen.sass */
     #content div.span4 {
       font-family: "ColaborateThinRegular", sans-serif; }
-    /* line 154, ../sass/screen.sass */
-    #content div h3 {
-      background-image: linear-gradient; }
   /* line 157, ../sass/screen.sass */
+  #content form dd {
+    margin: 0 0 1em; }
+  /* line 159, ../sass/screen.sass */
   #content form label {
     margin: 5px 0 0; }
+  /* line 161, ../sass/screen.sass */
+  #content .site-images {
+    margin: 0 0 3em 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6), -5px 5px 5px rgba(0, 0, 0, 0.6); }
 
-/* line 161, ../sass/screen.sass */
+/* line 166, ../sass/screen.sass */
 footer.row-fluid {
   -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 5px 5px 0 inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 5px 5px 0 inset;
   box-shadow: rgba(0, 0, 0, 0.8) 0 5px 5px 0 inset; }
-  /* line 163, ../sass/screen.sass */
+  /* line 168, ../sass/screen.sass */
   footer.row-fluid div {
     border-width: 0; }

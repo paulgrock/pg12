@@ -30,36 +30,42 @@ app.configure('production', function(){
 
 app.get('/', function(req, res){
   res.render('index', {
-    title: 'paulgrock.com | about'
+    title: 'paulgrock.com | about',
+    page: "about"
   });
 });
 
 app.get('/about', function(req, res){
   res.render('index', {
-    title: 'paulgrock.com | about'
+    title: 'paulgrock.com | about',
+    page: "about"
   });
 });
 
 app.get('/contact', function(req, res){
   res.render('contact', {
-    title: 'paulgrock.com | contact'
+    title: 'paulgrock.com | contact',
+    page: "contact"
   });
 });
 
 app.get('/showcase', function(req, res){
   res.render('showcase', {
-    title: 'paulgrock.com | showcase'
+    title: 'paulgrock.com | showcase',
+    page: "showcase"
   });
 });
 app.get('/blog', function(req, res){
   res.render('blog', {
-    title: 'paulgrock.com | blog'
+    title: 'paulgrock.com | blog',
+    page: "blog"
   });
 });
 
 app.get('/skills', function(req, res){
   res.render('skills', {
-    title: 'paulgrock.com | skills'
+    title: 'paulgrock.com | skills',
+    page: "skills"
   });
 });
 
